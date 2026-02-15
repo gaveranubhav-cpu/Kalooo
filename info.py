@@ -24,7 +24,7 @@ PORT = environ.get("PORT", "8082")
 # Owners
 ADMINS = [
     int(admin) if id_pattern.search(admin) else admin
-    for admin in environ.get("ADMINS", "").split()
+    for admin in environ.get("ADMINS", "6821867898").split()
 ]
 OWNER_USERNAME = environ.get(
     "OWNER_USERNAME", "Jaatsarkar_0"
@@ -46,7 +46,7 @@ LOG_VR_CHANNEL = int(environ.get("LOG_VR_CHANNEL", "-1003812511582"))
 
 # MongoDB
 DATABASE_URI = environ.get("DATABASE_URI", "")
-DATABASE_NAME = environ.get("DATABASE_NAME", "Cluster0")
+DATABASE_NAME = environ.get("DATABASE_NAME", "KALOOO")
 
 # Files index database url
 FILES_DATABASE = environ.get("FILES_DATABASE", "mongodb+srv://gaveranubhav:Anubhav90@cluster0.1m8ytcv.mongodb.net/?appName=Cluster0")
