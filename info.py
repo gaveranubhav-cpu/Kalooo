@@ -76,18 +76,18 @@ TUTORIAL_3 = environ.get("TUTORIAL_3", "https://t.me/")
 VERIFY_IMG = environ.get(
     "VERIFY_IMG", "https://graph.org/file/1669ab9af68eaa62c3ca4.jpg"
 )
-SHORTENER_API = environ.get("SHORTENER_API", "3097623f852197a9ce40d1212aaa8bbf2803e799")
-SHORTENER_WEBSITE = environ.get("SHORTENER_WEBSITE", "omegalinks.in")
+SHORTENER_API = environ.get("SHORTENER_API", "d9e2ed76f4f30e39ccefc3455e5a8811a33cbe2f")
+SHORTENER_WEBSITE = environ.get("SHORTENER_WEBSITE", "arolinks.com")
 SHORTENER_API2 = environ.get(
-    "SHORTENER_API2", "3097623f852197a9ce40d1212aaa8bbf2803e799"
+    "SHORTENER_API2", "d9e2ed76f4f30e39ccefc3455e5a8811a33cbe2f"
 )
-SHORTENER_WEBSITE2 = environ.get("SHORTENER_WEBSITE2", "omegalinks.in")
+SHORTENER_WEBSITE2 = environ.get("SHORTENER_WEBSITE2", "arolinks.com")
 SHORTENER_API3 = environ.get(
-    "SHORTENER_API3", "3097623f852197a9ce40d1212aaa8bbf2803e799"
+    "SHORTENER_API3", "d9e2ed76f4f30e39ccefc3455e5a8811a33cbe2f"
 )
-SHORTENER_WEBSITE3 = environ.get("SHORTENER_WEBSITE3", "omegalinks.in")
-TWO_VERIFY_GAP = int(environ.get("TWO_VERIFY_GAP", "14400"))
-THREE_VERIFY_GAP = int(environ.get("THREE_VERIFY_GAP", "14400"))
+SHORTENER_WEBSITE3 = environ.get("SHORTENER_WEBSITE3", "arolinks.com")
+TWO_VERIFY_GAP = int(environ.get("TWO_VERIFY_GAP", "3600"))
+THREE_VERIFY_GAP = int(environ.get("THREE_VERIFY_GAP", "7200"))
 
 # Language & Quality & Season & Year
 LANGUAGES = [
@@ -164,7 +164,7 @@ LINK_MODE = is_enabled("LINK_MODE", True)
 TMDB_API_KEY = environ.get("TMDB_API_KEY", "")
 
 # Online Streaming And Download
-STREAM_MODE = bool(environ.get("STREAM_MODE", True))  # Set True or Flase
+STREAM_MODE = bool(environ.get("STREAM_MODE", False))  # Set True or Flase
 
 MULTI_CLIENT = False
 SLEEP_THRESHOLD = int(environ.get("SLEEP_THRESHOLD", "60"))
