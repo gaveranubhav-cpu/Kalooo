@@ -24,12 +24,12 @@ PORT = environ.get("PORT", "8082")
 # Owners
 ADMINS = [
     int(admin) if id_pattern.search(admin) else admin
-    for admin in environ.get("ADMINS", "5672857559").split()
+    for admin in environ.get("ADMINS", "").split()
 ]
 OWNER_USERNAME = environ.get(
-    "OWNER_USERNAME", "IM_JISSHU"
+    "OWNER_USERNAME", "Jaatsarkar_0"
 )  # without @ or https://t.me/
-USERNAME = environ.get("USERNAME", "")  # ADMIN USERNAME
+USERNAME = environ.get("USERNAME", "Jaatsarkar_0")  # ADMIN USERNAME
 
 # Database Channel
 CHANNELS = [
@@ -49,12 +49,12 @@ DATABASE_URI = environ.get("DATABASE_URI", "")
 DATABASE_NAME = environ.get("DATABASE_NAME", "Cluster0")
 
 # Files index database url
-FILES_DATABASE = environ.get("FILES_DATABASE", "")
+FILES_DATABASE = environ.get("FILES_DATABASE", "mongodb+srv://gaveranubhav:Anubhav90@cluster0.1m8ytcv.mongodb.net/?appName=Cluster0")
 COLLECTION_NAME = environ.get("COLLECTION_NAME", "jisshu")
 
 # Other Channel's
 SUPPORT_GROUP = int(environ.get("SUPPORT_GROUP", "-1003219334269"))
-DELETE_CHANNELS = int(environ.get("DELETE_CHANNELS", "0"))
+DELETE_CHANNELS = int(environ.get("DELETE_CHANNELS", "-1003781179391"))
 request_channel = environ.get("REQUEST_CHANNEL", "-1003749791880")
 REQUEST_CHANNEL = (
     int(request_channel)
