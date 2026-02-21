@@ -66,7 +66,7 @@ media_filter = filters.document | filters.video | filters.audio
 async def media(bot, message):
     bot_id = bot.me.id
     media = getattr(message, message.media.value, None)
-    if media.mime_type in ["video/mp4", "video/x-matroska", "document/mp4", "audio/mpeg", "audio/mp4]:
+    if media.mime_type in ["video/mp4", "video/x-matroska", "document/mp4", "audio/mpeg", "audio/mp4"]:
         media.file_type = message.media.value
         media.caption = message.caption
         success_sts = await save_file(media)
@@ -338,4 +338,5 @@ def format_file_size(size_bytes):
     return f"{size_bytes:.2f} PB"
 
     
+
 
