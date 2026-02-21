@@ -140,6 +140,7 @@ async def index_files_to_db(lst_msg_id, chat, msg, bot, skip):
                     continue
                 elif message.media not in [
                     enums.MessageMediaType.VIDEO,
+                    enums.MessageMediaType.AUDIO,
                     enums.MessageMediaType.DOCUMENT,
                 ]:
                     unsupported += 1
@@ -148,7 +149,7 @@ async def index_files_to_db(lst_msg_id, chat, msg, bot, skip):
                 if not media:
                     unsupported += 1
                     continue
-                elif media.mime_type not in ["video/mp4", "video/x-matroska"]:
+                elif media.mime_type not in ["video/mp4", "video/x-matroska", "audio/mpeg", "audio/mp4"]:
                     unsupported += 1
                     continue
                 media.caption = message.caption
