@@ -65,14 +65,14 @@ MOVIE_UPDATE_CHANNEL = int(environ.get("MOVIE_UPDATE_CHANNEL", "-1003525105249")
 
 # Added Link Here Not Id
 SUPPORT_CHAT = environ.get("SUPPORT_CHAT", "https://t.me/pratilipifm0900")
-MOVIE_GROUP_LINK = environ.get("MOVIE_GROUP_LINK", "https://t.me/infinityaudiosearchinggroup'")
+MOVIE_GROUP_LINK = environ.get("MOVIE_GROUP_LINK", "https://t.me/infinityaudiosearchinggroup")
 
 # Verification
-IS_VERIFY = is_enabled("IS_VERIFY", False)
+IS_VERIFY = is_enabled("IS_VERIFY", True)
 # ---------------------------------------------------------------
-TUTORIAL = environ.get("TUTORIAL", "https://t.me/")
-TUTORIAL_2 = environ.get("TUTORIAL_2", "https://t.me/")
-TUTORIAL_3 = environ.get("TUTORIAL_3", "https://t.me/")
+TUTORIAL = environ.get("TUTORIAL", "https://t.me/howanubhav/14")
+TUTORIAL_2 = environ.get("TUTORIAL_2", "https://t.me/howanubhav/14")
+TUTORIAL_3 = environ.get("TUTORIAL_3", "https://t.me/howanubhav/14")
 VERIFY_IMG = environ.get(
     "VERIFY_IMG", "https://graph.org/file/1669ab9af68eaa62c3ca4.jpg"
 )
