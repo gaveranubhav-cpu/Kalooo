@@ -2334,10 +2334,10 @@ async def auto_filter(client, msg, spoll=False, pm_mode=False):
                 #  await delSticker(st)
                 await asyncio.sleep(DELETE_TIME)
                 await k.delete()
-                try:
-                    await message.delete()
-                except:
-                    pass
+              # try:
+                  # await message.delete()
+              # except:
+                  # pass
             else:
                 await message.reply_photo(
                     photo=imdb.get("poster"),
@@ -2357,10 +2357,10 @@ async def auto_filter(client, msg, spoll=False, pm_mode=False):
                 # await delSticker(st)
                 await asyncio.sleep(DELETE_TIME)
                 await k.delete()
-                try:
-                    await message.delete()
-                except:
-                    pass
+              # try:
+                  # await message.delete()
+              # except:
+                  # pass
             else:
                 await message.reply_photo(
                     photo=poster,
@@ -2383,10 +2383,10 @@ async def auto_filter(client, msg, spoll=False, pm_mode=False):
                     print("error", e)
                 await asyncio.sleep(DELETE_TIME)
                 await k.delete()
-                try:
-                    await message.delete()
-                except:
-                    pass
+              # try:
+                  # await message.delete()
+              # except:
+                  # pass
             else:
                 await message.reply_text(
                     cap + links + js_ads,
@@ -2407,10 +2407,10 @@ async def auto_filter(client, msg, spoll=False, pm_mode=False):
             #  await delSticker(st)
             await asyncio.sleep(DELETE_TIME)
             await k.delete()
-            try:
-                await message.delete()
-            except:
-                pass
+          # try:
+              # await message.delete()
+          # except:
+             #  pass
     return
 
 
