@@ -183,6 +183,7 @@ async def start(client: Client, message):
             caption=script.START_TXT.format(
                 message.from_user.mention, get_status(), message.from_user.id
             ),
+            has_spoiler=True,
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML,
         )
@@ -1548,4 +1549,5 @@ async def reset_group_command(client, message):
     reply_markup = InlineKeyboardMarkup(btn)
     await save_default_settings(grp_id)
     await message.reply_text("ꜱᴜᴄᴄᴇꜱꜱғᴜʟʟʏ ʀᴇꜱᴇᴛ ɢʀᴏᴜᴘ ꜱᴇᴛᴛɪɴɢꜱ...")
+
 
